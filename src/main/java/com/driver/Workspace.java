@@ -7,16 +7,20 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class Workspace extends Gmail{
-
+    private static final int MAX_INBOX_CAPACITY = Integer.MAX_VALUE;
     private ArrayList<Meeting> calendar; // Stores all the meetings
 
     public Workspace(String emailId) {
-        // The inboxCapacity is equal to the maximum value an integer can store.
+        // The inboxCapacity is equal to the maximum value an integer can store
+            super(emailId, MAX_INBOX_CAPACITY);
+            this.calendar = new ArrayList<>();
+        }
 
     }
 
     public void addMeeting(Meeting meeting){
         //add the meeting to calendar
+        calendar.add(meeting);
 
     }
 
