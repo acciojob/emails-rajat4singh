@@ -16,7 +16,7 @@ public class Workspace extends Gmail{
             this.calendar = new ArrayList<>();
         }
 
-    }
+
 
     public void addMeeting(Meeting meeting){
         //add the meeting to calendar
